@@ -1,5 +1,5 @@
 
-var port = process.env.port || 5000;
+var port = process.env.PORT || 5000;
 const app = require('express')();
 const server = require("http").createServer(app);
 const io= require('socket.io')(server,{
